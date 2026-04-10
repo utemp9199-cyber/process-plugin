@@ -37,8 +37,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <!-- Add Autodesk AutoCAD managed assemblies references in Visual Studio: acdbmgd.dll and acmgd.dll -->
-    <!-- Prefer direct references to AutoCAD installation to ensure all dependencies resolve during build -->
     <Reference Include="acdbmgd">
       <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\acdbmgd.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
@@ -54,27 +52,12 @@
       <SpecificVersion>False</SpecificVersion>
       <Private>false</Private>
     </Reference>
-    <!-- If you prefer local copies in AutoCADPlugin\libs, uncomment these instead and ensure the files exist there. -->
-    <!--
-    <Reference Include="acdbmgd">
-      <HintPath>libs\acdbmgd.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="acmgd">
-      <HintPath>libs\acmgd.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-      <Private>false</Private>
-    </Reference>
-    -->
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exporter.cs" />
   </ItemGroup>
   <Target Name="AfterBuild">
-    <!-- Ensure an output folder at repository root for easy discovery -->
     <MakeDir Directories="$(ProjectDir)..\build_output\$(Configuration)" />
-    <!-- Copy the produced DLL to the build_output folder -->
     <Copy SourceFiles="$(TargetPath)"
           DestinationFiles="$(ProjectDir)..\build_output\$(Configuration)\$(AssemblyName).dll"
           Condition="Exists('$(TargetPath)')" />
