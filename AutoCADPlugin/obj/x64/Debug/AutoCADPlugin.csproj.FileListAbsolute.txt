@@ -1,0 +1,6 @@
+C:\Users\samuel\source\repos\autocadextractor\AutoCADPlugin\obj\x64\Debug\AutoCADPlugin.csproj.AssemblyReference.cache
+C:\Users\samuel\source\repos\autocadextractor\AutoCADPlugin\obj\x64\Debug\AutoCADPlugin.csproj.CoreCompileInputs.cache
+C:\Users\samuel\source\repos\autocadextractor\AutoCADPlugin\bin\Debug\AutoCADPlugin.dll
+C:\Users\samuel\source\repos\autocadextractor\AutoCADPlugin\bin\Debug\AutoCADPlugin.pdb
+C:\Users\samuel\source\repos\autocadextractor\AutoCADPlugin\obj\x64\Debug\AutoCADPlugin.dll
+C:\Users\samuel\source\repos\autocadextractor\AutoCADPlugin\obj\x64\Debug\AutoCADPlugin.pdb
